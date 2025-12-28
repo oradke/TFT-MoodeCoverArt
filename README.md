@@ -97,15 +97,15 @@ Install these pre-requisites:
 ```
 sudo apt-get update
 sudo apt-get install python3-rpi.gpio python3-spidev python3-pip python3-pil python3-numpy
-sudo pip3 install mediafile
-sudo pip3 install pyyaml
+sudo apt-get install python3-mediafile python3-yaml
+
 ```
 Install the TFT driver.
 
 I have forked the Pimoroni driver and modified it to work with other ST7789 boards. Install it with the following command:
 
 ```
-sudo pip3 install RPI-ST7789
+sudo pip3 install RPI-ST7789 --break-system-packages
 ```
 
 ***Ensure 'Metadata file' is turned on in Moode System Configuration***
